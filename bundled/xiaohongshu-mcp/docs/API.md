@@ -529,11 +529,24 @@ Content-Type: application/json
 **响应字段说明:**
 - `note.time`: 笔记发布时间戳（毫秒）
 - `note.ipLocation`: 发布者 IP 归属地
-- `note.type`: 笔记类型
+- `note.type`: 笔记类型（`normal` 为图文，`video` 为视频）
 - `note.interactInfo`: 互动信息
   - `liked`: 当前用户是否已点赞
   - `collected`: 当前用户是否已收藏
 - `note.imageList[].livePhoto`: 是否为 Live Photo
+- `note.video`: 视频信息（仅视频笔记有此字段）
+  - `capa.duration`: 视频时长（秒）
+  - `media.stream`: 视频流信息
+    - `h264[]`: H.264 编码流列表
+    - `h265[]`: H.265 编码流列表
+    - 每个流包含：
+      - `masterUrl`: 下载地址（永久有效，无需鉴权）
+      - `backupUrls`: 备用下载地址列表
+      - `width`, `height`: 分辨率
+      - `streamType`: 流类型（259=H264-720p, 114=H265-720p, 115=H265-1080p）
+      - `fps`: 帧率
+      - `size`: 文件大小（字节）
+      - `avgBitrate`: 平均码率
 - `comments.list[].createTime`: 评论发布时间戳（毫秒）
 - `comments.list[].ipLocation`: 评论者 IP 归属地
 - `comments.list[].likeCount`: 评论点赞数

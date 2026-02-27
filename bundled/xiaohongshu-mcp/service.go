@@ -9,7 +9,6 @@ import (
 
 	"github.com/go-rod/rod"
 	"github.com/sirupsen/logrus"
-	"github.com/xpzouying/headless_browser"
 	"github.com/xpzouying/xiaohongshu-mcp/browser"
 	"github.com/xpzouying/xiaohongshu-mcp/configs"
 	"github.com/xpzouying/xiaohongshu-mcp/cookies"
@@ -535,8 +534,13 @@ func (s *XiaohongshuService) ReplyCommentToFeed(ctx context.Context, feedID, xse
 	}, nil
 }
 
-func newBrowser() *headless_browser.Browser {
-	return browser.NewBrowser(configs.IsHeadless(), browser.WithBinPath(configs.GetBinPath()))
+func newBrowser() browser.BrowserInterface {
+	// 自动选择浏览器模式：优先使用比特浏览器，否则回退到普通 headless 模式
+	b, err := browser.NewBrowserAuto(configs.IsHeadless(), browser.WithBinPath(configs.GetBinPath()))
+	if err != nil {
+		logrus.Warnf("NewBrowserAuto error: %v", err)
+	}
+	return b
 }
 
 func saveCookies(page *rod.Page) error {

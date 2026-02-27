@@ -75,12 +75,38 @@ type ImageInfo struct {
 
 // Video 表示视频信息
 type Video struct {
-	Capa VideoCapability `json:"capa"`
+	Capa  VideoCapability `json:"capa"`
+	Media *VideoMedia     `json:"media,omitempty"` // 视频媒体信息（包含流地址）
 }
 
 // VideoCapability 表示视频能力信息
 type VideoCapability struct {
 	Duration int `json:"duration"` // 视频时长，单位秒
+}
+
+// VideoMedia 视频媒体信息
+type VideoMedia struct {
+	Stream *VideoStream `json:"stream,omitempty"` // 视频流信息
+}
+
+// VideoStream 视频流信息
+type VideoStream struct {
+	H264 []StreamInfo `json:"h264,omitempty"` // H.264 编码流
+	H265 []StreamInfo `json:"h265,omitempty"` // H.265 编码流
+}
+
+// StreamInfo 单个视频流信息
+type StreamInfo struct {
+	MasterURL    string   `json:"masterUrl"`            // 主下载地址（永久有效）
+	BackupURLs   []string `json:"backupUrls,omitempty"` // 备用下载地址
+	Width        int      `json:"width"`                // 视频宽度
+	Height       int      `json:"height"`               // 视频高度
+	StreamType   int      `json:"streamType"`           // 流类型: 259=H264-720p, 114=H265-720p, 115=H265-1080p
+	FPS          int      `json:"fps,omitempty"`        // 帧率
+	Size         int64    `json:"size,omitempty"`       // 文件大小(字节)
+	AvgBitrate   int      `json:"avgBitrate,omitempty"` // 平均码率
+	VideoBitrate int      `json:"videoBitrate,omitempty"` // 视频码率
+	AudioBitrate int      `json:"audioBitrate,omitempty"` // 音频码率
 }
 
 // ================ Feed 详情页相关结构体 ================
@@ -103,6 +129,7 @@ type FeedDetail struct {
 	User         User              `json:"user"`
 	InteractInfo InteractInfo      `json:"interactInfo"`
 	ImageList    []DetailImageInfo `json:"imageList"`
+	Video        *Video            `json:"video,omitempty"` // 视频信息（包含流地址）
 }
 
 // DetailImageInfo 表示详情页的图片信息
