@@ -1,0 +1,20 @@
+{
+  "app_id": "cli_xxxxxxxxxxxxxxxx",
+  "app_secret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+  "app_token": "bascxxxxxxxxxxxxxxxx",
+  "table_id": "tblxxxxxxxxxxxx",
+  "field_map": {
+    "title": "标题",
+    "content": "内容",
+    "author": "作者",
+    "liked_count": "点赞数",
+    "collected_count": "收藏数",
+    "comment_count": "评论数",
+    "shared_count": "分享数",
+    "detail_url": "详情链接",
+    "feed_id": "笔记ID",
+    "rank": "排序",
+    "keyword": "关键词",
+    "captured_at": "采集时间"
+  }
+}

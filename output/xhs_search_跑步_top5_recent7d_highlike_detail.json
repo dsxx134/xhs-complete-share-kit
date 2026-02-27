@@ -1,0 +1,119 @@
+{
+  "query": {
+    "keyword": "跑步",
+    "publish_time": "一周内",
+    "target_sort": "点赞最多",
+    "api_sort_fallback": "综合",
+    "selection_logic": "从综合结果中按点赞数本地重排取前5",
+    "limit": 5
+  },
+  "generated_at": "2026-02-27T10:59:29.200798+00:00",
+  "counts": {
+    "search_returned_total": 22,
+    "picked_top_n": 5,
+    "detail_success_count": 3,
+    "detail_error_count": 2
+  },
+  "items": [
+    {
+      "rank": 1,
+      "feed_id": "699c558700000000150303aa",
+      "xsec_token": "ABRNn7iHSG54a4It148AKCeY0YymlYwvGOBt64uYWYmkY=",
+      "detail_url": "https://www.xiaohongshu.com/explore/699c558700000000150303aa",
+      "error": null,
+      "detail": {
+        "title": "你喜欢跑步吗？100公里给你答案",
+        "desc": "都说跑马拉松的人是没苦硬吃，\n跑100公里就更苦了……\n甚至跑完连个证书也没有！\n那为啥还要去跑呢？\n带着好奇和忐忑，我“搭”上了绕城绿道100公里的“车”……\n\t\n发起人：当日寿星 亮哥@烂泥巴扶上墙\n号召人：CDRC主理人 政哥@爱热闹的阿政\n带跑人：现实太认真@认真跑着\n挑战者：刘哥@Run寕 陈总@陈林跑快点塞\n补给：唯二（骑行一圈）、政哥（骑行50公里）\n陪跑：CDRC兄弟姐妹\n#跑友圈[话题]# #跑了就友[话题]# #马拉松[话题]# #100公里[话题]# #100公里挑战[话题]# #成都绕城绿道[话题]# #绿道100公里[话题]# #奔跑的力量[话题]# #跑步打卡[话题]#",
+        "publish_time_ms": 1771853191000,
+        "publish_time_utc": "2026-02-23T13:26:31+00:00",
+        "ip_location": "四川",
+        "author_nickname": "唯二🌟跑到99",
+        "interact": {
+          "likedCount": "362",
+          "collectedCount": "243",
+          "commentCount": "117",
+          "sharedCount": ""
+        },
+        "images_count": 1,
+        "comments_loaded_count": 10,
+        "comments_has_more": true
+      }
+    },
+    {
+      "rank": 2,
+      "feed_id": "699da5d0000000001a02f883",
+      "xsec_token": "ABGH7tdW5M0Zbrq-GAQJasYEDQqM8F7nsPrH_zKWwb4Aw=",
+      "detail_url": "https://www.xiaohongshu.com/explore/699da5d0000000001a02f883",
+      "error": null,
+      "detail": {
+        "title": "春意盎然来个8KM",
+        "desc": "昨天返程路过西安，有幸目睹了罕见的鹅毛大雪，实景很壮观。穿过秦岭淮河线来到成都后景色就春和景明一片盎然，今天继续休假晒晒太阳，看看油菜花，河道跑个步\n#跑了就很赞[话题]# #大步跑向春天[话题]# #跑过冬天一起期待春暖花开[话题]# #跑步打卡[话题]#",
+        "publish_time_ms": 1771939280000,
+        "publish_time_utc": "2026-02-24T13:21:20+00:00",
+        "ip_location": "四川",
+        "author_nickname": "戈多",
+        "interact": {
+          "likedCount": "94",
+          "collectedCount": "18",
+          "commentCount": "25",
+          "sharedCount": ""
+        },
+        "images_count": 9,
+        "comments_loaded_count": 10,
+        "comments_has_more": true
+      }
+    },
+    {
+      "rank": 3,
+      "feed_id": "699f030c000000001b01c894",
+      "xsec_token": "AB-h_g31B_ZcxQnwHefpKyMWmCessCa-lyB_MkORimXGg=",
+      "detail_url": "https://www.xiaohongshu.com/explore/699f030c000000001b01c894",
+      "error": null,
+      "detail": {
+        "title": "Hello 今天又是7公里😊",
+        "desc": "会有人喜欢跑步么？\n啊啊啊 反正我不喜欢\n但我会给自己说 你需要跑步 因为提高心肺功能 因为减脂等等 哈哈当然更是为了多吃一顿 多喝两口！！！今天跑了7公里就去喝一个😍\n对于我来说 跑步 才是自律（因为不喜欢）\n而爬山和撸铁 才是放纵（因为很喜欢很享受）\n#跑了就很赞[话题]# #一起来跑步[话题]# #不如去跑步[话题]# #好好锻炼用心生活[话题]#",
+        "publish_time_ms": 1772028684000,
+        "publish_time_utc": "2026-02-25T14:11:24+00:00",
+        "ip_location": "四川",
+        "author_nickname": "涵涵",
+        "interact": {
+          "likedCount": "86",
+          "collectedCount": "3",
+          "commentCount": "24",
+          "sharedCount": ""
+        },
+        "images_count": 5,
+        "comments_loaded_count": 10,
+        "comments_has_more": true
+      }
+    },
+    {
+      "rank": 4,
+      "feed_id": "699c341c000000000b00a9ba",
+      "xsec_token": "ABRNn7iHSG54a4It148AKCeYszAwJqgXbwa8lOo673Akg=",
+      "detail_url": "https://www.xiaohongshu.com/explore/699c341c000000000b00a9ba",
+      "error": "500 Server Error: Internal Server Error for url: http://127.0.0.1:18060/api/v1/feeds/detail",
+      "detail": null
+    },
+    {
+      "rank": 5,
+      "feed_id": "6998477b000000000c0352fa",
+      "xsec_token": "ABLJQGUylcqAOBUcFxGdbDS2xpMQE-_mQV3LQaWZHylaM=",
+      "detail_url": "https://www.xiaohongshu.com/explore/6998477b000000000c0352fa",
+      "error": "500 Server Error: Internal Server Error for url: http://127.0.0.1:18060/api/v1/feeds/detail",
+      "detail": null
+    }
+  ],
+  "errors": [
+    {
+      "rank": 2,
+      "feed_id": "699c341c000000000b00a9ba",
+      "error": "500 Server Error: Internal Server Error for url: http://127.0.0.1:18060/api/v1/feeds/detail"
+    },
+    {
+      "rank": 3,
+      "feed_id": "6998477b000000000c0352fa",
+      "error": "500 Server Error: Internal Server Error for url: http://127.0.0.1:18060/api/v1/feeds/detail"
+    }
+  ]
+}
